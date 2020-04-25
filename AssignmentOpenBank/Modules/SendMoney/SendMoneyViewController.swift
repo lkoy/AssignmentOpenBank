@@ -134,6 +134,7 @@ final class SendMoneyViewController: BaseViewController {
         
         confirmButton = Button(style: .primary)
         confirmButton.addTarget(self, action: #selector(confirmTapped), for: .touchUpInside)
+        confirmButton.title = "ENVIAR"
         confirmButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(confirmButton)
     }
