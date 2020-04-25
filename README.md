@@ -22,6 +22,14 @@ I chose this architecture because is scalable and easy to test. I added testing 
 
 ## Challenges during development
 
-
+Implement the OpenBanking API.
+Users:
+Username	Password	OTP	Tipología
+00000001A	12345678	000000	Particulares
+00000002B	12345678	000000	Particulares
+00000003C	12345678	000000	Particulares
+A00000042	12345678	000000	Empresas
+A00000059	12345678	000000	Empresas
+A00000067	12345678	000000	Empresas
 
 *Note: Carthage used to manage dependencies (run carthage bootstrap --platform ios command on the project folder)*
