@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G4032" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MOBankAccount" representedClassName="MOBankAccount" syncable="YES" codeGenerationType="class">
+        <attribute name="accountId" optional="YES" attributeType="String"/>
+        <attribute name="accountType" optional="YES" attributeType="String"/>
+        <attribute name="accountUser" optional="YES" attributeType="String"/>
+        <attribute name="balance" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="bank" optional="YES" attributeType="String"/>
+        <attribute name="bic" optional="YES" attributeType="String"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <attribute name="primary" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MOUser" inverseName="bankAccounts" inverseEntity="MOUser"/>
+    </entity>
+    <entity name="MOTransaction" representedClassName="MOTransaction" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="bankTransactionId" optional="YES" attributeType="String"/>
+        <attribute name="concept" optional="YES" attributeType="String"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="destinationBank" optional="YES" attributeType="String"/>
+        <attribute name="destinationBankNumber" optional="YES" attributeType="String"/>
+        <attribute name="destinationUserPhone" optional="YES" attributeType="String"/>
+        <attribute name="destinationUserUuid" optional="YES" attributeType="String"/>
+        <attribute name="originBank" optional="YES" attributeType="String"/>
+        <attribute name="originBankNumber" optional="YES" attributeType="String"/>
+        <attribute name="originUserPhone" optional="YES" attributeType="String"/>
+        <attribute name="originUserUuid" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="transferType" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MOUser" inverseName="transactions" inverseEntity="MOUser"/>
+    </entity>
+    <entity name="MOUser" representedClassName="MOUser" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="bankAccounts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MOBankAccount" inverseName="user" inverseEntity="MOBankAccount"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MOTransaction" inverseName="user" inverseEntity="MOTransaction"/>
+    </entity>
+    <elements>
+        <element name="MOBankAccount" positionX="-432" positionY="-72.0546875" width="128" height="193"/>
+        <element name="MOTransaction" positionX="-351.1484375" positionY="186.86328125" width="128" height="283"/>
+        <element name="MOUser" positionX="-63" positionY="-18" width="128" height="88"/>
+    </elements>
+</model>

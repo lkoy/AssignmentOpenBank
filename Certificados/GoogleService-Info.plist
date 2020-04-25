@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>194773269943-7ulsepbhcdcjmp98dpl9crqpshqi5084.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.194773269943-7ulsepbhcdcjmp98dpl9crqpshqi5084</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>194773269943-4djckvfn08n5ibh5tcv4i3djdt6asuo4.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAkeImj403bvcFkjHDci11nyXL_sqqSopg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>194773269943</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pips.pay</string>
+	<key>PROJECT_ID</key>
+	<string>pips-test-5ec62</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pips-test-5ec62.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:194773269943:ios:d92415dded8aa60c3c3c32</string>
+	<key>DATABASE_URL</key>
+	<string>https://pips-test-5ec62.firebaseio.com</string>
+</dict>
+</plist>
